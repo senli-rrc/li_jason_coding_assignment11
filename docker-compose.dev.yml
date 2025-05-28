@@ -11,6 +11,4 @@ services:
       - ./src:/li_jason_site/src
     ports:
       - "7775:3000"
-    working_dir: /li_jason_site
-    stdin_open: true
-    tty: true
+    working_dir: /li_jason_site/src
