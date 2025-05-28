@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: li_jason_coding_assignment11
+    image: li_jason_coding_assignment11
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/li_jason_site/src
+    ports:
+      - "7775:3000"
+    working_dir: /li_jason_site
+    stdin_open: true
+    tty: true
